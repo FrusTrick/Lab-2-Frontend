@@ -1,0 +1,103 @@
+{
+"Education":[
+    {
+        "title": "Software Development .NET",
+        "school": "Chas Academy 2025-ongoing"
+    },
+    {
+        "title": "Programming basics ",
+        "school": "NTI 2020"
+    }
+],
+
+"Languages":[
+    {
+        "name": "Swedish"
+    },
+    {
+        "name": "English"
+    },
+    {
+        "name": "Arabic"
+    }
+],
+
+"Experience":[
+    {
+        "title": "Customer Service Advisor",
+        "employer": "Tesla Motors Sweden AB 2020",
+        "description": "Customer service advisor for the Tesla Segeltorp workshop where I booked customers, briefed technicians and handled their requests."
+    },
+    {
+        "title": "Customer Car Lease Coordinator",
+        "employer": "Hedin Bil Akalla 2019-2020",
+        "description": "End of lease coordinator responsible for guiding customers through the end-of-lease. Coordinated efforts between post-ease vehicle inspection, banks, workshop and insurance companies."    
+    },
+    {
+        "title": "Tyre storage manager & service advisor",
+        "employer": "Hedin Bil Transportbilscenter Kista 2016-2019",
+        "description": "Managed storage of customer wheels, pre-season bookings and after-sales. Resposnible for team of mechanics during the tyre-changing seasons and during the off-season I took on the role of Customer service advisor."
+    }
+],
+"SoftwareDevSkills":[
+    {
+        "title": "Programming languages",
+        "items":[
+            {"name": "C#"},
+            {"name": "JavaScript"},
+            {"name": "HTML"},
+            {"name": "CSS"}
+        ]
+    },
+    {
+        "title": "Frameworks",
+        "items":[
+            {"name": "ASP.NET"},
+            {"name": "Entity Framework Core"},
+            {"name": "React"},
+            {"name": "Node.js"},
+            {"name": "Bootstrap"}
+        ]
+    },
+    {
+        "title": "Tools",
+        "items":[
+            {"name": "Git"},
+            {"name": "Visual Studio"},
+            {"name": "Visual Studio Code"},
+            {"name": "Postman"},
+            {"name": "SQL Server Management Studio"},
+            {"name": "SQLite "},
+            {"name": "DBBrowser for SQLite"},
+            {"name": "Azure DevOps"},
+            {"name": "Umbraco CMS"}
+        ]
+    }
+],
+
+"ProgrammingLang":[
+    {"name":"Swedish"},
+    {"name":"English"},
+    {"name":"Arabic"}
+],
+
+"Frameworks":[
+            {"name": "ASP.NET"},
+            {"name": "Entity Framework Core"},
+            {"name": "React"},
+            {"name": "Node.js"},
+            {"name": "Bootstrap"}
+],
+
+"DevTools":[
+            {"name": "Git"},
+            {"name": "Visual Studio"},
+            {"name": "Visual Studio Code"},
+            {"name": "Postman"},
+            {"name": "SQL Server Management Studio"},
+            {"name": "SQLite "},
+            {"name": "DBBrowser for SQLite"},
+            {"name": "Azure DevOps"},
+            {"name": "Umbraco CMS"}
+]
+}

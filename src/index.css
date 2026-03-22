@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: #1d2220;
+    transition: background 0.5s ease;
+}
+
+.easter-bg{
+    background: linear-gradient(45deg, hotpink, cyan, yellow);
+}
+
+
+nav{
+    background-color: #1d2220;
+    overflow: hidden;
+    filter: drop-shadow(.15rem .15rem .15rem);
+}
+
+.nav-items h1{
+    padding-left: 2.5rem;
+}
+
+.nav-items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    opacity: 80%
+}
+
+.nav-items ul li{
+    float: left;
+}
+
+.nav-items ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    min-width: 9rem;
+    transition: transform 0.8s ease, background-color 0.5s ease;
+}
+
+.nav-items ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.02);
+    color: black;
+}
+ul li a.active {
+  background-color: #1d2220;
+  color: white;
+}
+
+#portrait{
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+#portrait img{
+    max-width: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.resume-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sidebar{
+    background-color: #1d2220;
+    padding: 10px;
+    width: 20%;
+    color: white;
+}
+
+.resume-main{
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+}
+
+.sidebar-title {
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: aqua;
+}
+
+.sidebar-item{
+    margin-top: 6rem;
+}
+
+.sidebar-item a{
+    color: white;
+}
+
+.sidebar-content{
+    margin-bottom: 5rem;
+}
+
+.main-hero{
+    background-image: linear-gradient(to right, aqua 1%, white 120%);
+    padding: 2rem ;
+    justify-items: center;
+    justify-content: center;
+    filter: drop-shadow(.1rem .1rem .1rem);
+    font-size: 30px;
+}
+
+.resume-title{
+        border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+}
+
+.resume-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.resume-about-me{
+    margin: 3rem;
+}
+
+.about-description{
+    max-width: 50rem;
+    margin-left: 5rem
+}
+
+.internal-work{
+    margin: 3rem
+}
+
+.work-card{
+    padding-bottom: 1.5rem;
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 0.288) 1%, white 70%);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    max-width: 70rem;
+}
+
+.work-card h3{
+    font-style: italic;
+}
+
+.skill-card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.skill-card{
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(to right, rgba(15, 17, 17, 0.288) 1%, white 300%);
+    border-radius: 10px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0, .5);
+}
+
+.modal-content {
+    background-color: #1d2220;;
+    width: 500px;
+    max-width: 80%;
+    padding: 2em;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-decoration: none;
+}
+
+#close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+footer{
+    color: white;
+}
+
+@media(max-width: 800px){
+    .skill-card-wrapper{
+        flex-direction: column;
+    }
+    .nav-items ul{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-items ul li{
+        float: none;
+        width: 100%;
+    }
+    .nav-items ul li a{
+        width: 100%;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar-item{
+        margin-top: 2rem;
+    }
+    .resume-about-me{
+        margin: 1rem;
+    }
+    .internal-work{
+        margin: 1rem;
+    }
+    .about-description{
+        margin-left: 0rem;
+    }
+    .resume-main{
+        width: 100%;
+    }
+    #portrait img{
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    }
+    .skill-card{
+        width: 100%;
+    }
+    .modal-content{
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 15mm 15mm 15mm 15mm;
+    }
+
+    nav,
+    footer,
+    .modal {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+
+    .resume-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .sidebar {
+        background-color: #1d2220;
+        color: white;
+        width: 22%;
+        padding: 10px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .sidebar p,
+    .sidebar li,
+    .sidebar h2,
+    .sidebar h3 {
+        color: white;
+    }
+
+    .sidebar-title {
+        border-color: aqua;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume-main {
+        background-color: white;
+        width: 78%;
+        padding: 10px;
+    }
+
+    .main-hero {
+        background-image: linear-gradient(to right, aqua 1%, white 120%);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 1rem;
+        font-size: 20pt;
+    }
+
+    .work-card {
+        background-image: linear-gradient(to right, rgba(0, 255, 255, 0.2) 1%, white 70%);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+    }
+
+    .resume-title {
+        border-color: black;
+    }
+
+    .skill-card {
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .skill-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+    .resume-about-me {
+        margin: 1rem;
+    }
+
+    .about-description {
+        margin-left: 1rem;
+    }
+
+    .internal-work {
+        margin: 1rem;
+    }
+}
+
+
